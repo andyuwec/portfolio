@@ -1,0 +1,133 @@
+body{
+    background-color: #b4c5e4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*body main style*/
+
+header{
+    background-image: url(images/header-span-image.jpg);
+    background-position-y: -5rem;
+    background-color: #0e103d;
+    background-blend-mode:soft-light;
+    padding: 3rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+}
+header>h1{
+    color: #b4c5e4;
+    text-decoration: overline underline;
+    align-self: center;
+}
+nav{
+    display:flex;
+    flex-direction: row  ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+}
+nav a{
+    color: rgb(24, 24, 57);
+    background-color: #b4c5e4;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+nav a:hover{
+    background-color: #c0dfa1;
+    color: #0e103d  ;
+}
+/*header styling*/
+
+.about-me{
+    background-color: #c0dfa1;
+    padding: 1rem;
+    color: #0e103d;
+    border-radius: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-me>div>h4{
+    font-size: 1.5rem;
+    margin: 1rem;
+    display: block;
+    text-align: center;
+}
+.about-me img{
+    border: #0e103d;
+    border-radius: 1rem;
+    border-style: ridge;
+}
+#self-image{
+    width: 60%;
+    text-wrap: wrap;
+}
+/**/
+
+.inspired{
+    background-color: #c0dfa1;
+    color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.inspired>img{
+    width: 75%;
+    border-color: #0e103d;
+    border-width: .5rem;
+    border-style: ridge;
+}
+.inspired>a{
+    color: #a36d90;
+    text-decoration: none;
+}
+.inspired>p{
+    color: #0e103d;
+}
+.inspired>h2{
+    color: #0e103d;
+    text-decoration: underline;
+}
+.inspired>h2>a{
+    color: #0e103d;
+    text-decoration: none;
+}
+#inspo-heading{
+    background-color: #c0dfa1;
+    color: #0e103d;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+/*inspiration article styling*/
+
+footer{
+    background-color: #a36d90;
+    color: #b4c5e4;
+    padding: 2rem;
+    text-align: center;
+}
+#contact-me{
+    color: #b4c5e4;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+#contact-me:hover{
+    background-color: #442639;
+    color: #485671;
+}
+/*footer styling*/
+.links-to-socials{
+    display: flex;
+    flex-direction: row;
+}
+footer>div>a>img{
+    max-width: 70%;
+}
