@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Peterson - Portfolio</title>
     <link rel="stylesheet" href="Styles.css">
+    <script src="photodropdown.js"></script>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <div id="portfolio-logoheader">
+            <a href="index.html"><img src="images/mylogo.svg" alt="mylogo" id="header-logo"></a>
+        </div>
         <nav>
               <a href="Code.html">Code Projects</a>
               <a href="photo.html">Photo Projects</a>
@@ -16,8 +24,54 @@
         </nav>
     </header>
     <main>
-        <section>
-            <article></article>
+        <section class="images-from-walks" id="lowes-creek">
+                <h2 class="accordion"> 
+                    UPC Lowes Creek Photo Walk
+                </h2>
+                <article>
+                    <img src="images/lowes-creek/floor-mushrooms.jpeg" alt="mushrooms on the floor">
+                    <img src="images/lowes-creek/bluirred-signs.jpeg" alt="sign in the middle of the forest">
+                    <img src="images/lowes-creek/bridge.jpeg" alt="faraway bridge in the light">
+                    <img src="images/lowes-creek/floor-shroom.jpeg" alt="yellow mushroom in the grass">
+                    <img src="images/lowes-creek/flower.jpeg" alt="flower in a single shaft of light">
+                    <img src="images/lowes-creek/tree-shrooms.jpeg" alt="mushrooms in a tree">
+            </article>
+        </section>
+        <section class="images-from-walks" id="putnam-trail-10-22">
+            <h2 class="accordion"> 
+                UPC Putnam Trail Photo Walk
+            </h2>
+            <article>
+                <img src="images/putnam-trail-walk/car-1.jpg" alt="red 1990's corvette">
+                <img src="images/putnam-trail-walk/car-2.jpg" alt="corvette pt 2">
+                <img src="images/putnam-trail-walk/centennial.jpg" alt="uwec centennial hall low angle">
+                <img src="images/putnam-trail-walk/cotton-flower.jpg" alt=" white flower on the side of trail">
+                <img src="images/putnam-trail-walk/field.jpg" alt="people walking through a field">
+                <img src="images/putnam-trail-walk/leaf-bright.jpg" alt="sun shining through the leaves of an oak tree">
+                <img src="images/putnam-trail-walk/leaf1.jpg" alt="yellow leaves on a tree">
+                <img src="images/putnam-trail-walk/leaf2.jpg" alt="more yellow leaves on a tree">
+                <img src="images/putnam-trail-walk/stairs.jpg" alt="the wooden stairs on the uwec campus">
+                <img src="images/putnam-trail-walk/trail-lone.jpg" alt="empty trail winding into the trees">
+                <img src="images/putnam-trail-walk/trail-people1.jpg" alt="UPC members on the trail">
+                <img src="images/putnam-trail-walk/trail-people2.jpg" alt="another photo of the UPC members on the trail">
+            </article>
+        </section>
+        <section class="images-from-walks" id="my-photos">
+            <h2 class="accordion"> 
+                My Personal Favorites
+            </h2>
+            <article>
+                <img src="images/my-images/carson-park-bench.png" alt="bench at carson park, EC WI">
+                <img src="images/my-images/garage-top.png" alt="top of a parking garage at the end of a day">
+                <img src="images/my-images/goose1.png" alt="1 goose on the water">
+                <img src="images/my-images/goose2.png" alt="2 geese on a pond">
+                <img src="images/my-images/IMG_0877.jpeg" alt="farm at midnight covered in fog">
+                <img src="images/my-images/norway-flam-boat.jpeg" alt="on a boat in Flam, Norway">
+                <img src="images/my-images/norway-flam-fjord.jpeg" alt="norwegian fjord">
+                <img src="images/my-images/norway-oslo-shore.jpeg" alt="photo of the oslo harbor from the oslo opera house">
+                <img src="images/my-images/suites-sunset.jpeg" alt="uwec suites hall at sunset">
+                <img src="images/my-images/towers-bluebird-day.jpeg" alt="uwec towers hall on a bright summer day">
+            </article>
         </section>
     </main>
     <footer>

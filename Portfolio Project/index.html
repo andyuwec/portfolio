@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Peterson - Portfolio</title>
     <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <div id="portfolio-logoheader">
+            <a href="index.html"><img src="images/mylogo.svg" alt="mylogo" id="header-logo"></a>
+        </div>
         <nav>
               <a href="Code.html">Code Projects</a>
               <a href="photo.html">Photo Projects</a>
@@ -24,13 +31,8 @@
             <p>
                 I am a college student studying to get a degree in Marketing, with a double minor in Management and Multimedia Communications. I enjoy all sorts of creative avenues with a big leaning towards photography, video production, web design, and graphic design. Most of my time has been dedicated to working on my photography and video portfolio, but I do work on my other hobbies in the little spare time I have.  
             </p>
-        </section>
-            <div id="inspo-heading">
-                <h2>My Biggest Inspirations</h2>
-                <p>
-                    Some of my biggest inspirations for my work include youtubers such as Mumbo Jumbo, Film artists such as Wes Anderson, and of course, my own Mom.
-                </p>
-            </div>
+        </section class="inspirations">
+                <h2 id="inspires">My Biggest Inspirations</h2>
             <article class="inspired">
                 <h2><a href="https://www.youtube.com/channel/UChFur_NwVSbUozOcF_F2kMg">Mumbo Jumbo</a></h2>
                 <img src="images/Mumbo.webp" alt="the youtuber mumbo Jumbo">
@@ -45,7 +47,7 @@
                     Wes Anderson, known for his creative and almost simplistic directing style for his films, is a major inspration of mine. Some of his highest profile films include "Fantastic Mr. Fox", "The Grand Budapest Hotel", and "Isle of Dogs". All of these films have inspired me and pushed me in the direction of film making. All in all, Wes Anderson will continue to inspire me as I go forward in my creative endeavors. 
                 </p>
             </article>
-            <article class="inspired">
+            <article class="inspired" id="mom-inspire">
                 <h2>My Mom - Sarah</h2>
                 <img src="images/mom.jpg" alt="andy and sarah peterson smiling fdor the camera in Norway">
                 <a class="credits"></a>

@@ -1,0 +1,255 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #D0CFEC;
+}
+/*basic stuff*/
+header{
+    background-color: #6A8E7F;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+header>img{
+    margin: -2rem;
+    margin-bottom: -4.5rem;
+}
+nav>a{
+    display: inline-block;
+    flex-direction: row;
+    color: white;
+    font-size: 1rem;
+    background-color: #6A8E7F;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav>a:hover{
+    background-color: #3e524a;
+}
+/*All header stuff*/
+.images>img{
+    max-width: 75%;
+    border-width:1rem;
+    border-style: ridge;
+    border-color: #C6AE82;
+    margin: 1rem;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#extra{
+    max-width: 75%;
+    border-width:1rem;
+    border-style: ridge;
+    border-color: #C6AE82;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ourstory{
+    text-align: center;
+}
+section{
+    background-color: #6A8E7F;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+/*main content (i.e. images, about, and menu)*/
+footer{
+    background-color: #C6AE82;
+    color: white;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer a{   
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+footer a:hover{
+    background-color: #7e6e52;
+}
+.footer{
+    background-color: #C6AE82;
+}
+/*footer styling*/
+.menu-art{
+    background-color: #3e524a;
+    padding: .5rem;
+}
+.menu>h2{
+    text-align: center;
+}
+.menu-art>h3{
+    text-align: center;
+}
+.menu-art>h4{
+    text-align: center;
+}
+/*menu styling mobile*/
+
+/*All above are mobile design*/
+@media (min-width:550px){
+    nav>a{
+        font-size: 2.2rem;
+    }
+    header>img{
+        margin-top: -4.5rem;
+        margin-bottom: -8rem;
+    }
+    /*header*/
+    .about>h2{
+        font-size: 2rem;
+    }
+    .about>p{
+        font-size: 1.5rem;
+    }
+    #extra{
+        display: flex;
+        justify-content: center;
+    }
+    .images>img{
+        max-width: 35%;
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /*about and images*/
+    .menu>h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .menu{
+        background-image: url(images/image2.jpg);
+        background-repeat: repeat;
+        background-size: contain;
+        background-blend-mode:multiply;
+    }
+    .menu-art{
+        max-width: 80%;
+        margin-left:8%
+    }
+    .menu-art>h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .menu-art>h4{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .menu-art>ul{
+        font-size: 1.5rem;
+    }
+    /*menu designs*/
+    footer>h2{
+        margin-bottom: 2.5rem;
+    }
+    footer>a:hover{
+        background-color: #7e6e52;  
+    }
+    footer>.footer{
+        background-color: #C6AE82;
+        margin: -2.5rem 0;
+    }
+    footer>.footer>.footer-item{
+        margin: 2.5rem 0;
+    }
+    /*footer*/
+}
+
+/* all above are iPad/tablet design*/
+@media (min-width:1000px){
+    nav>a{
+        font-size: 4rem;
+        margin: 0rem 2rem;
+    }
+    header>img{
+        margin-bottom: -11rem;
+    }
+    /*header*/
+    main>.images{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .images>img{
+        max-width:40%;
+    }
+    .about{
+        max-width: 38%;
+        justify-items: center;
+    }
+    .about-img{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10rem;
+    }
+    /*about & images*/
+    .menu-art{
+        max-width: 70%;
+        border-color: #3e524a;
+        border-width: 8px;
+        margin-left: 0rem;
+    }
+    .menu-art>h3{
+        font-size: 4.2rem;
+    }
+    .menu-art>h4{
+        font-size: 2.5rem;
+    }
+    .menu-art>ul{
+        font-size: 1.3rem;
+    }
+    #drinks{
+        max-width: 100%;
+        margin: 0%;
+    }
+    .menu-pos-1000px{
+        display: flex;
+        justify-content: space-evenly; 
+    }
+    /*menu designs*/
+    footer>.footer{
+        background-color: #C6AE82;
+        display: flex;
+        max-width: 80%;
+        margin: 0rem -5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    footer>.footer>.footer-item{
+        max-width: 80%;
+        margin: 0rem 5rem;
+    }
+    .footer-item>a{
+        font-size: 2rem;
+    }
+    footer>h2{
+        font-size: 3rem;
+    }
+    /*footer designs*/
+}
+
+/* all above are web design */
