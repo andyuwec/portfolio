@@ -1,13 +1,12 @@
 body{
-    background-color: #b4c5e4;
+    background-color: #D9F6FC;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*body main style*/
 
 header{
     background-image: url(images/header-span-image.jpg);
-    background-position-y: -5rem;
-    background-color: #0e103d;
+    background-color: #133C55;
     background-blend-mode:soft-light;
     padding: 3rem 0;
     background-size: cover;
@@ -27,7 +26,7 @@ nav{
 }
 nav a{
     color: rgb(24, 24, 57);
-    background-color: #b4c5e4;
+    background-color: #D9F6FC;
     text-decoration: none;
     padding: 1rem;
     margin: 1rem;
@@ -35,19 +34,17 @@ nav a{
     justify-items: center;
 }
 nav a:hover{
-    background-color: #c0dfa1;
+    background-color: #386FA4;
     color: #0e103d  ;
 }
 header>div>a>#header-logo{
     max-width: 100%;
     justify-items: center;
-    margin-bottom: -7.5rem;
-    margin-top: -7.5rem;
 }
 /*header styling*/
 
 .about-me{
-    background-color: #c0dfa1;
+    background-color: #84D2F6;
     padding: 1rem;
     color: #0e103d;
     border-radius: 2rem;
@@ -71,9 +68,13 @@ header>div>a>#header-logo{
     text-wrap: wrap;
 }
 /* about me */
+h6{
+    display: none;
+}
+/*getting rid of section header warnings*/
 
 .inspired{
-    background-color: #c0dfa1;
+    background-color: #84D2F6;
     color: #fff;
     margin: 1rem;
     padding: 1rem;
@@ -90,7 +91,7 @@ header>div>a>#header-logo{
     border-style: ridge;
 }
 .inspired>a{
-    color: #a36d90;
+    color: #386FA4;
     text-decoration: none;
 }
 .inspired>p{
@@ -112,7 +113,7 @@ header>div>a>#header-logo{
 /*inspiration article styling*/
 
 footer{
-    background-color: #a36d90;
+    background-color: #133C55;
     color: #b4c5e4;
     padding: 2rem;
     text-align: center;
@@ -125,8 +126,8 @@ footer{
     font-weight: 800;
 }
 #contact-me:hover{
-    background-color: #442639;
-    color: #485671;
+    background-color: #386FA4;
+    color: #84D2F6;
 }
 .links-to-socials{
     display: flex;
@@ -139,7 +140,7 @@ footer>div>a>img{
 /*Above is all of the header, footer, and homepage styling for the website*/
 
 .contact-form{
-    background-color: #c0dfa1;
+    background-color: #386FA4;
     color: #0e103d;
     display: grid;
     grid-template-rows: 6rem 2rem 2rem 2rem 2rem 12rem auto;
@@ -149,12 +150,12 @@ footer>div>a>img{
 }
 input[type=text], input[type=tel], input[type=email], textarea{
     border-radius: .5rem;
-    background-color: #F3F9D2;
+    background-color: #D9F6FC;
     color: #0e103d;
 }
 input[type=submit], input[type=reset]{
-    background-color: #a36d90;
-    color: #0e103d;
+    background-color: #133C55;
+    color: #D9F6FC;
     font-size: 1.5rem;
     border-radius: 1rem;
 }
@@ -192,7 +193,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     display: none;
 }
 article.show{
-    background-color: #F3F9D2;
+    background-color: #133C55;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -218,32 +219,32 @@ span.rotate{
 }
 
 .images-from-walks>article>img{
-   max-height: 10rem;
+   max-height: 8rem;
     margin: 1%;
 }
 .images-from-walks>h2{
-    background-color: #442639;
-    color: #b4c5e4;
+    background-color: #133C55;
+    color: #D9F6FC;
     padding: 1rem;
 }
 /*photo page css*/
 
 .code-articles>article{
-    background-color: #442639;
-    color: #b4c5e4;
+    background-color: #133C55;
+    color: #D9F6FC;
     padding: 1.5rem;
     border-radius: .5rem;
     margin: 1rem;
 }
 .code-articles>article>a{
-    color: #b4c5e4;
-    background-color: #a36d90;
+    color: #133C55;
+    background-color: #84D2F6;
     text-decoration: none;
     padding: .5rem;
 }
 .code-articles>article>a:hover{
-    background-color: #b4c5e4;
-    color: #442639;
+    background-color: #D9F6FC;
+    color: #386FA4;
 }
 /*code projects page css*/
 
@@ -251,15 +252,15 @@ span.rotate{
     max-width: 75%;
 }
 .video-projects>article{
-    background-color: #442639;
-    color: #b4c5e4;
+    background-color: #133C55;
+    color: #D9F6FC  ;
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
 }
 /*Video Page CSS*/
 
-@media(min-width:800px){
+@media(min-width:700px){
     header>div>a>#header-logo{
         max-width: 75%;
         align-self: center;
@@ -268,6 +269,7 @@ span.rotate{
     }
     header{
         display: flex;
+        background-position-y: -5rem;
     }
     #header-logo{
         max-width: 95%;
@@ -293,7 +295,6 @@ span.rotate{
         font-size: 3.25rem;
     }
     .about-me>p{
-        text-align: wrap;
         font-size: 1.5rem;
     }
     .about-me>img{
@@ -387,13 +388,16 @@ span.rotate{
         font-size: 1.5rem;
     }
     .inspired{
-        max-width: 44%;
+        max-width: 40%;
         align-self: center;
     }
     .inspired>img{
         max-width: 90%;
     }
-
+    .center-articles{
+        display: flex;
+        justify-content: space-around;
+    }
     .links-to-socials{
         justify-content: center;
         justify-items: center;
