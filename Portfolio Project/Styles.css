@@ -132,6 +132,10 @@ footer{
 .links-to-socials{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
 footer>div>a>img{
     max-width: 70%;
@@ -221,6 +225,8 @@ span.rotate{
 .images-from-walks>article>img{
    max-height: 8rem;
     margin: 1%;
+    border: #84D2F6 5px;
+    border-style:groove
 }
 .images-from-walks>h2{
     background-color: #133C55;
