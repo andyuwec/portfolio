@@ -397,6 +397,9 @@ span.rotate{
         max-width: 40%;
         align-self: center;
     }
+    .inspired p{
+        font-size: 1.5rem;
+    }
     .inspired>img{
         max-width: 90%;
     }
@@ -412,10 +415,31 @@ span.rotate{
     }
     /*homepage header and footer css 1100px*/
     .code-articles{
-        max-width: 75%;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 13.5%;
+        justify-content: center;
+    }
+    .code-projects{
+        max-width: calc(75% - 35rem);
     }
     /*code articles 1100px*/
+
+    form{
+        max-width: calc(100% - 30rem);
+        border-radius: 2rem;
+    }
+    .form-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Contact form 1100px*/
+    .video-projects{
+        display: flex;
+        justify-content: center;
+    }
+    .video-projects article{
+        width: calc(75% - 35rem);
+        margin: 2rem;
+    }
 }
